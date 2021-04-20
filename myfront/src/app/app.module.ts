@@ -17,17 +17,30 @@ import { JoinComponent } from './join/join.component';
 import { FindPwComponent } from './find-pw/find-pw.component';
 import { ResetPwComponent } from './reset-pw/reset-pw.component';
 import { ContactComponent } from './contact/contact.component';
-import { DetailComponent } from './detail/detail.component';
 import { IdeaPushComponent } from './idea-push/idea-push.component';
 import { CheckInfoComponent } from './check-info/check-info.component';
 import { ReviseComponent } from './revise/revise.component';
 import { PointComponent } from './point/point.component';
 import { MyInterComponent } from './my-inter/my-inter.component';
-import { IdeaDetailComponent } from './idea-detail/idea-detail.component';
 import { MyIdeaComponent } from './my-idea/my-idea.component';
-import { MyIdeaDetailComponent } from './my-idea-detail/my-idea-detail.component';
 import { CsDetailComponent } from './cs-detail/cs-detail.component';
 import { NoticeDetailComponent } from './notice-detail/notice-detail.component';
+import { FootComponent } from './foot/foot.component';
+import { IdeaResetComponent } from './idea-reset/idea-reset.component';
+import { CsResetComponent } from './cs-reset/cs-reset.component';
+import { AdLoginComponent } from './ad-login/ad-login.component';
+import { AdNoticeLogComponent } from './ad-notice-log/ad-notice-log.component';
+import { AdNoticeResetComponent } from './ad-notice-reset/ad-notice-reset.component';
+import { AdNoticeUploadComponent } from './ad-notice-upload/ad-notice-upload.component';
+import { AdContactLogComponent } from './ad-contact-log/ad-contact-log.component';
+import { AdContactAnswerComponent } from './ad-contact-answer/ad-contact-answer.component';
+import { AdCsLogComponent } from './ad-cs-log/ad-cs-log.component';
+import { AdCsAnswerComponent } from './ad-cs-answer/ad-cs-answer.component';
+import { AdMemberInfoComponent } from './ad-member-info/ad-member-info.component';
+import { AdUserBanComponent } from './ad-user-ban/ad-user-ban.component';
+import { AdUserSecedeComponent } from './ad-user-secede/ad-user-secede.component';
+import { AdUserLogComponent } from './ad-user-log/ad-user-log.component';
+import { AdTotalUserLogComponent } from './ad-total-user-log/ad-total-user-log.component';
 
 
 // const appRoutes : Routes = [ { path: '', component: HomeComponent },
@@ -52,17 +65,30 @@ import { NoticeDetailComponent } from './notice-detail/notice-detail.component';
     FindPwComponent,
     ResetPwComponent,
     ContactComponent,
-    DetailComponent,
     IdeaPushComponent,
     CheckInfoComponent,
     ReviseComponent,
     PointComponent,
-    MyInterComponent,
-    IdeaDetailComponent,
-    MyIdeaComponent,
-    MyIdeaDetailComponent,
+    MyInterComponent,    
+    MyIdeaComponent,    
     CsDetailComponent,
     NoticeDetailComponent,
+    FootComponent,
+    IdeaResetComponent,
+    CsResetComponent,
+    AdLoginComponent,
+    AdNoticeLogComponent,
+    AdNoticeResetComponent,
+    AdNoticeUploadComponent,
+    AdContactLogComponent,
+    AdContactAnswerComponent,
+    AdCsLogComponent,
+    AdCsAnswerComponent,
+    AdMemberInfoComponent,
+    AdUserBanComponent,
+    AdUserSecedeComponent,
+    AdUserLogComponent,
+    AdTotalUserLogComponent,
   ],
   imports: [
     BrowserModule,
