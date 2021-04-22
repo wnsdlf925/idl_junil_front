@@ -1,92 +1,188 @@
  #home{
   background-image: url( https://images.unsplash.com/photo-1596079890701-dd42edf0b7d4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80);  
-  width:100vw ;
-  background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 100%;
+  background-repeat: no-repeat;
+  min-height: 80vh;
   margin: 0;
-}
-#homecont{
   
 }
+
 #homeup{
-  padding-top: 10%;
-padding-bottom: 50px;
+  background-image: url(http://bicdataidea.com/img/img_intro_txt.png);
+  
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 0;
+  margin: 5% 0;
+ 
+}
+#homeRow{
+  background-size: contain;
 }
 #homedownleft{
-  background-image: url(http://bicdataidea.com/img/img_intro_banner01.png) ;
-  background-size: 40%;
-  align-content: right;
+  background-image: url(http://bicdataidea.com/img/img_intro_banner01.png),url(http://bicdataidea.com/img/img_intro_banner01_plus.png);
+  /* background-image: url(http://bicdataidea.com/img/img_intro_banner01_plus.png); */
+  background-size: 40%, 10%;
+  background-position: 90% 80%,95% 10%;
   background-color: rgb(55, 202, 212);
   background-repeat: no-repeat;
+  height: 40%;
+  cursor:pointer;
+  /* margin-bottom: 5% ; */
   
-  
-  
-}
-#homedownright{
-  background-image: url(http://bicdataidea.com/img/img_intro_banner02.png);
-  background-color: rgb(97, 14, 165);
-  background-repeat: no-repeat;
-  background-size: 40%;
- 
-}
-p{
-  font-weight: 600;
-  font-size: large;
-  font-family: '나눔고딕',sans-serif ;
-  color: aliceblue;
-}
-/*
-.homecenter{
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  
-  top:10%;
-  
-  min-height: 580px;
-  left:16vw;
-  
-}
-.homecenterup{
-  position: relative;
-  margin-bottom: 80px;
- 
-  
-}
-.homecenterdown{
-  
-  height: 300px;
-  position: relative;
-  
-}
-.homespanleft{
-  
-}
-.homespanright{
- 
-}
-p{
-  font-weight: 600;
-  font-size: large;
-  font-family: '나눔고딕',sans-serif ;
-  color: aliceblue;
-}
-.homeinnerleft{
-  background-image: url(http://bicdataidea.com/img/img_intro_banner01.png) ;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  margin: 5%;
-}
-.homeinnerright{
-  background-image: url(http://bicdataidea.com/img/img_intro_banner02.png) ;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  margin: 5%;
-} */
-.homeinner col s12 m6{
 
 }
+#homedownright{
+  background-image: url(http://bicdataidea.com/img/img_intro_banner02.png),url(http://bicdataidea.com/img/img_intro_banner02_plus.png);
+  background-size: 40%,10%;
+  background-position: 90% 80%,95% 10%;
+  background-repeat: no-repeat;
+  background-color: rgb(97, 14, 165);
+  height: 40%;
+  cursor:pointer;
+  /* margin-bottom: 5% ; */
+ 
+}
+#homehr{
+  margin-left: 5%;
+  width:10%;
+}
+#texttitle{
+  font-size: small;
+}
+p{
+  font-weight: 600;
+  font-size: large;
+  font-family: '나눔고딕',sans-serif ;
+  color: aliceblue;
+  padding-left: 5%;
+}
+#textBottom{
+  font-size: xx-large;
+}
+
+
+/* 태블릿------------------------------------------------------------------------------------------------------------ */
+@media(max-width: 992px){
+
+  #home{
+    background-image: url( https://images.unsplash.com/photo-1596079890701-dd42edf0b7d4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80);  
+    width:100vw ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 80vh;
+    margin: 0;
+  }
+  
+  #homeup{
+    padding: 0;
+    margin: 5% 0;
+
+  }
+  #homedownleft{
+    background-image: url(http://bicdataidea.com/img/img_intro_banner01.png),url(http://bicdataidea.com/img/img_intro_banner01_plus.png) ;
+    background-size: 25%,8%;
+  background-position: 95% 80%, 95% 10%;
+    background-color: rgb(55, 202, 212);
+    background-repeat: no-repeat;
+    margin:0;
+    cursor:pointer
+    
+    
+    
+    
+  }
+  #homedownright{
+    background-image: url(http://bicdataidea.com/img/img_intro_banner02.png),url(http://bicdataidea.com/img/img_intro_banner02_plus.png);
+    background-size: 25%,8%;
+    background-position: 95% 80%, 95% 10%;
+    background-color: rgb(97, 14, 165);
+    background-repeat: no-repeat;
+    cursor:pointer
+   
+  }
+  p{
+    font-weight: 600;
+    font-size: large;
+    font-family: '나눔고딕',sans-serif ;
+    color: aliceblue;
+  }
+  #homehr{
+    margin-left: 5%;
+    width:5%;
+    
+  }
+  #textBottom{
+    font-size: xx-large;
+  }
+
+}
+/* -------------------------------------------------------------------------------------------------------------------- */
+
+
+
+
+
+
+
+/* 모바일------------------------------------------------------------------------------------------------------------ */
+@media(max-width: 600px){
+
+
+  #home{
+    background-image: url( https://images.unsplash.com/photo-1596079890701-dd42edf0b7d4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80);  
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 80vh;
+    margin: 0;
+  }
+  #homecont{
+    
+  }
+  #homeup{
+    
+    width: 80%;
+    height: 180px;
+    
+    margin-top: 10%;
+  }
+  #homedownleft{
+    background-image: url(http://bicdataidea.com/img/img_intro_banner01.png),url(http://bicdataidea.com/img/img_intro_banner01_plus.png) ;
+    background-size: 30%,8%;
+    background-color: rgb(55, 202, 212);
+    background-repeat: no-repeat;
+    padding: 20px ;
+    height: 40%;
+    cursor:pointer
+    
+    
+    
+  }
+  #homedownright{
+    background-image: url(http://bicdataidea.com/img/img_intro_banner02.png),url(http://bicdataidea.com/img/img_intro_banner02_plus.png);
+    background-size: 30%,8%;
+    background-color: rgb(97, 14, 165);
+    background-repeat: no-repeat;
+    padding: 20px ;
+    height: 40%;
+    cursor:pointer
+  }
+  p{
+    font-weight: 600;
+    font-size: small;
+    font-family: '나눔고딕',sans-serif ;
+    color: aliceblue;
+    margin: 0px 0px 10px 0px;
+  }
+  #textBottom{
+    font-size: large;
+  }
+
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------ */

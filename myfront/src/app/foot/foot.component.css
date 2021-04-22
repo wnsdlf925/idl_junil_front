@@ -1,64 +1,101 @@
-/* .foot{
-  background-color:  rgb(199, 195, 195);
-  bottom: 0;
-  width: 100%;
-  height: 160px;
-  padding:  0;
-  left: 0;
 
-margin: 0;
-
-}
-.left{
-  width: 70%;
-  height: 100%;
-  background-color: rgb(199, 195, 195);
-  box-sizing: border-box;
-  text-align: left;
-  padding-left:15% ;
-}
-.foottoptext{
-  padding-top: 30px;
-  font-weight: 600;
-  font-family: '나눔고딕',sans-serif ;
-}
-.foottext{
-  font-weight: 600;
-  font-family: '나눔고딕',sans-serif ;
-}
-.footidea{
-  
-  padding-left:15% ;
-} */
 #foot{
-  height: 150px;
   background-color:  rgb(199, 195, 195);
   margin: 0;
+  height: 100%;
+  width: 100%;
+  
 }
-/* #foottext{
-  font-weight: 600;
-  font-family: '나눔고딕',sans-serif ;
-  align: right;
-} */
 
-
-#footidea{
-  padding-left:15% ;
-  padding-top: 90px;
-}
 #foottexttop{
   
-  font-weight: 600;
   
-  font-family: '나눔고딕',sans-serif ;
+  text-align: left;
   padding-top: 15px;
-  padding-left: 25%;
-  margin: 10px;
+  
 }
 #foottextdown{
   
+  text-align: left;
+  
+}
+
+#footidea{
+  text-align : right;
+  padding: 90px 0px 0px 0px;
+  
+}
+#foottext{
   font-weight: 600;
   font-family: '나눔고딕',sans-serif ;
-  padding-left: 25%;
-  margin: 10px;
+  
 }
+
+
+
+
+
+@media(max-width: 992px){
+  
+  #foot{
+    height: 150px;
+    background-color:  rgb(199, 195, 195);
+    margin: 0;
+    width: 100vw;
+  }
+  #foottexttop{
+  
+    text-align: left;
+    padding-top: 15px;
+  }
+  #foottextdown{
+    text-align: left;
+  }
+  #footidea{
+    text-align : right;
+    padding: 90px 0px 0px 0px;
+  }
+  #foottext{
+    font-weight: 600;
+    font-family: '나눔고딕',sans-serif ;
+    
+  }
+}
+
+
+
+
+
+
+
+
+@media(max-width: 600px){
+  #foot{
+    height: 160px;
+    background-color:  rgb(199, 195, 195);
+    margin: 0;
+    width: 100vw;
+  }
+  #foottexttop{
+  
+    text-align: left;
+    padding: 0;
+    
+  }
+  #foottextdown{
+    text-align: left;
+  }
+  #footidea{
+    text-align : left;
+    padding: 0;
+  }
+  #foottext{
+    font-weight: 600;
+    font-family: '나눔고딕',sans-serif ;
+    padding: 0;
+    
+  }
+}
+
+
+

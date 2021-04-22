@@ -1,83 +1,48 @@
 
 
-<!-- <div id="home">
-  <div class="homecenter">
-    <div class="homecenterup">
-      <img src="http://bicdataidea.com/img/img_intro_txt.png">
-    </div>
-    
-    <div class="homecenterdown">
-      <span class="homespanleft" a routerLink="/board/anno">
-        <div class="homeinnerleft">
-          <hr width="10%" color="white" align ="left"> 
 
-          <p>온라인 아이디어 콘테스트, 아이디어 플랫폼</p>
-          <br>
-          <p>머릿속 가진 아이디어</p>
-          <p>현실로 만들어</p>
-          <p>토론해보자아</p>
-         <br><br><br>
-          
-          <P style="color: rgb(97, 14, 165); font-size: xx-large;">아이디어 플랫폼</P>
-          
-        </div>
-      </span>
-      <span class="homespanright" a routerLink="/board/idea">  
-        <div class="homeinnerright">
-        <hr width="10%" color="white" align ="left"> 
-
-          <p>온라인 아이디어 콘테스트, 아이디어 플랫폼</p>
-          <br>
-          <p>무수히 쏟아지는 정보</p>
-          <p>나에게 필요한 정보만</p>
-          <p>조회하자</p>
-         <br><br><br>
-          
-          <P style="color:rgb(55, 202, 212); font-size: xx-large;">공고정보게시판</P>
-          
-        </div>
-      </span>
-    </div>
-  </div>
-</div> -->
-<div id="home">
+<div id="home" >
 
   <div id="homecont" class="container">
     
     
-    <div class="row" style="margin-bottom: 0;">
+    <div id="homeRow" class="row" style="margin-bottom: 0;">
       <div id = "homeup" class="col s12">
         
-        <img src="http://bicdataidea.com/img/img_intro_txt.png">
+        <img src="http://bicdataidea.com/img/img_intro_txt.png"  height="100%" style="visibility: hidden;">
         
       </div>
-      <div id= "homedownleft"class="col s12 m6">
+      <div id= "homedownleft"class="col s12 m12 l6" routerLink="/board/idea">
+        
         <br>
         
-        <hr width="10%" color="white" align ="left" > 
+        <hr id="homehr"  size="1px" color="white" align ="left" > 
+          
+          <p id ="texttitle">온라인 아이디어 콘테스트, 아이디어 플랫폼</p>
+          
+          <p>머릿속 가진 아이디어</p>
+          <p>현실로 만들어</p>
+          <p>토론해보자아</p>
+          
+          
+          <P id="textBottom" style="color: rgb(97, 14, 165);">아이디어 플랫폼</P>
+          
         
-        <p>온라인 아이디어 콘테스트, 아이디어 플랫폼</p>
-        <br>
-        <p>머릿속 가진 아이디어</p>
-        <p>현실로 만들어</p>
-        <p>토론해보자아</p>
-    <br><br><br>
-    
-    <P style="color: rgb(97, 14, 165); font-size: xx-large;">아이디어 플랫폼</P>
-    
   </div>
-  <div id= "homedownright"class="col s12 m6">
-    <br>
-    <hr width="10%" color="white" align ="left"> 
+  <div id= "homedownright"class="col s12 m12 l6" routerLink="/board/anno"> 
     
-    <p>온라인 아이디어 콘테스트, 아이디어 플랫폼</p>
-    <br>
-    <p>무수히 쏟아지는 정보</p>
-    <p>나에게 필요한 정보만</p>
-    <p>조회하자</p>
-    <br><br><br>
+      <br>
+      <hr id="homehr" size="1px" color="white" align ="left"> 
+      
+      <p id ="texttitle">온라인 아이디어 콘테스트, 아이디어 플랫폼</p>
+      
+      <p>무수히 쏟아지는 정보</p>
+      <p>나에게 필요한 정보만</p>
+      <p>조회하자</p>
+      
+      
+      <P id="textBottom" style="color:rgb(55, 202, 212); ">공고정보게시판</P>
     
-    <P style="color:rgb(55, 202, 212); font-size: xx-large;">공고정보게시판</P>
   </div>
 </div>
 
