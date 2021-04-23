@@ -1,0 +1,53 @@
+#ideaMain{
+  background-image:url(https://images.unsplash.com/photo-1512758017271-d7b84c2113f1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1920&q=80) ;
+ background-repeat: no-repeat;
+ background-position: center;
+  height: 300px;
+  margin-bottom: 50px;
+  
+}
+#ideaText{
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding-top: 125px;
+  font-weight: bold;
+
+}
+#ideaRank{
+  margin-bottom: 40vh;
+}
+#ideaList{
+  margin-bottom: 40vh;
+}
+#ideatext{
+  font-family: sans-serif;
+}
+#ideaButton{
+  background-color: rgb(97, 14, 165);
+  float: right;
+  margin-top: 11px;
+}
+#ideaTitle{
+  text-align: left;
+}
+#ideaRankName{
+  text-align: left;
+}
+td{
+  font-weight: 500;
+  text-align: center;
+}
+th{
+  text-align: center;
+  align-content: center;
+}
+
+@media (max-width: 992px){
+  #ideaRank{
+    margin-bottom: 10vh;
+  }
+  #ideaList{
+    margin-bottom: 10vh;
+  }
+}
