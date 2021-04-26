@@ -12,23 +12,35 @@
   margin-bottom: 50px;
   
 }
-#smallButton{
+#smallButtonCan{
 color: black;
 float: right;
-font-size: large;
-font-weight: 500;
+font-size: medium;
+font-weight: 600;
+font-family: sans-serif;
 height: 100%;
+border: 0px 10px 0px 10px;
+margin: 0px 10px 0px 10px;
 
 }
+#smallButtonUp{
+  color: rgb(97, 14, 165);
+  float: right;
+  font-size: medium;
+  font-weight: 600;
+  font-family: sans-serif;
+  height: 100%;
+  padding-right: 10px;
+  border-right: 2px solid silver;
+  
+  }
 #smallBox{
   height: 100%;
+  margin-top: 15px;
+  
 }
-#cancle{
-padding: 10px;
-}
-#upload{
-  padding: 10px
-}
+
+
 
 #contactText{
   display: flex;
