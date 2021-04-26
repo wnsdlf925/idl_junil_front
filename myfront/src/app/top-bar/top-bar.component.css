@@ -42,6 +42,7 @@ a:active{
 }
 
 
+
 #small-nav-bar{
   box-shadow: inset 0px -1px 1px rgb(199, 195, 195);
   margin-bottom: 0;
@@ -100,6 +101,25 @@ a:active{
   }
   
 }
+@media(max-width: 450px) {
+  #ideaImg{
+    background-size: cover;
+     margin-left: 20%;
+    padding-top: 15px;
+    margin-top: 10px;
+    
+    
+  }
+  #navList{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 0px;
+    
+    
+  }
+  
+}
+
 
 /* .nav-bar{
   

@@ -1,0 +1,122 @@
+#contactRow{
+  min-width: 360px;
+    width: 100%;
+    margin-bottom: 0;
+}
+
+#contactMain{
+  background-image:url(https://images.unsplash.com/photo-1512758017271-d7b84c2113f1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1920&q=80) ;
+ background-repeat: no-repeat;
+ background-position: center;
+  height: 300px;
+  margin-bottom: 50px;
+  
+}
+#smallButton{
+color: black;
+float: right;
+font-size: large;
+font-weight: 500;
+height: 100%;
+
+}
+#smallBox{
+  height: 100%;
+}
+#cancle{
+padding: 10px;
+}
+#upload{
+  padding: 10px
+}
+
+#contactText{
+  display: flex;
+  align-items: center;
+  line-height: 50px
+}
+#contactMainText{
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding-top: 125px;
+  font-weight: bold;
+  
+}
+
+
+#contactTitle{
+  text-align: left;
+}
+
+
+#buttonBox{
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+
+#contactButton{
+  
+  width: 25%;
+}
+
+#cke{
+  min-height: 500px;
+}
+
+
+:host ::ng-deep .ck-editor__editable_inline {
+  min-height: 400px;
+  max-height: 400px;
+}
+
+
+
+@media (max-width: 992px){
+  
+  #contactMain{
+    background-image:url(https://images.unsplash.com/photo-1512758017271-d7b84c2113f1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1920&q=80) ;
+   background-repeat: no-repeat;
+   background-position: center;
+    height: 300px;
+    margin-bottom: 50px;
+    min-width: 360px;
+    
+  }
+  
+  #contactRow{
+    min-width: 360px;
+      width: 100%;
+  }
+  #buttonBox{
+    height: 80px;
+    visibility: hidden;
+   
+  }
+}
+@media (max-width: 600px){
+ 
+  #contactMain{
+    background-image:url(https://images.unsplash.com/photo-1512758017271-d7b84c2113f1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1920&q=80) ;
+   background-repeat: no-repeat;
+   background-position: center;
+    height: 300px;
+    margin-bottom: 50px;
+    min-width: 360px;
+    
+  }
+  
+  #contactRow{
+    min-width: 360px;
+      width: 100%;
+  }
+  #buttonBox{
+    height: 80px;
+    visibility: hidden;
+    
+  }
+}

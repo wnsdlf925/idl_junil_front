@@ -1,3 +1,94 @@
-<p>notice works!</p>
-<button type="button"><a routerLink="/board/notice">공지사항</a></button>
-<button type="button"><a routerLink="/board/cs">문의게시판</a></button>
+
+<!-- <button type="button"><a routerLink="/board/notice">공지사항</a></button>
+<button type="button"><a routerLink="/board/cs">문의게시판</a></button> -->
+
+
+
+
+
+
+
+
+  
+<div id="noticeRow" class="row">
+  <div id="noticeMain" class="col s12"><h3 id="noticeText">공지사항</h3></div>
+  <div class="container">
+
+    <div id="noticeButton" class="valign-wrapper" class="col s6 m6 l6" routerLink="/board/notice"><h6 >공지사항</h6></div>
+    <div id="csButton" class="valign-wrapper" class="col s6 m6 l6" routerLink="/board/cs"><h6  >문의게시판</h6></div>
+    
+  <div id="noticeList" class="col s12 m12 l12">
+    <h5 id ="noticetext">공지사항</h5>
+    <div style="width:4.4em; height:2px; background-color:rgb(97, 14, 165);"></div>
+    <div style="width: 100%; height:1px; background-color: rgb(199, 195, 195);"></div>
+    
+    
+    <table>
+    <thead>
+      <tr>
+        <th style="border-bottom:1px rgb(0, 0, 0) solid;">번호</th>
+        <th style="border-bottom:1px rgb(0, 0, 0) solid;">제목</th>
+        <th style="border-bottom:1px rgb(0, 0, 0) solid;">작성일</th>
+      </tr>
+    </thead>
+    
+    <tbody>
+      <tr>
+        <td >1</td>
+        <td id="noticeTitle">마트********</td>
+        <td >2020-20-21</td>
+      </tr>
+      <tr>
+        <td >2</td>
+        <td id="noticeTitle">효과음***********</td>
+        <td >2020-20-20</td>
+      </tr>
+      <tr>
+        <td >3</td>
+        <td id="noticeTitle">한국****************</td>
+        <td >2020-20-20</td>
+      </tr>
+    </tbody>
+  </table>
+  
+</div>
+  <!-- 리스트 -->
+  
+
+<!-- 페이징, 검색 -->
+
+<div class="row">
+<div class="col s12">
+  
+    <div class="input-field col s0 m0 l8">
+      <ul class="pagination">
+        <li class="disabled"><a><i class="material-icons">chevron_left</i></a></li>
+        <li class="active"><a >1</a></li>
+        <li class="waves-effect"><a >2</a></li>
+        <li class="waves-effect"><a >3</a></li>
+        <li class="waves-effect"><a >4</a></li>
+        <li class="waves-effect"><a >5</a></li>
+        <li class="waves-effect"><a ><i class="material-icons">chevron_right</i></a></li>
+<!-- 모바일은 더보기로 -->
+      </ul>
+    </div>
+    <div id= "searchBox" class="input-field col s12 m12 l4">
+      
+      <input type="text" id="autocomplete-input" class="autocomplete">
+      <label for="autocomplete-input"></label>
+      <i id="search" class="material-icons prefix">search</i>
+     
+    
+  </div>
+</div>
+</div>
+    
+
+
+  </div>
+  
+</div>
+
+
+
+<!-- <button type="button"><a routerLink="/member/myIdea/ideaPush">등록하기</a></button> -->
