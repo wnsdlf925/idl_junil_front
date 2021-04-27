@@ -1,0 +1,195 @@
+#pointRow{
+  min-width: 360px;
+    width: 100%;
+}
+#pointMain{
+  background-image:url(https://images.unsplash.com/photo-1512758017271-d7b84c2113f1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1920&q=80) ;
+ background-repeat: no-repeat;
+ background-position: center;
+  height: 300px;
+ margin-bottom: -30px;
+  
+}
+#pointText{
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding-top: 125px;
+  font-weight: bold;
+
+}
+
+#pointTitle{
+  text-align: left;
+}
+
+#checkInfoButton{
+  /* text-align: center; */
+  background-color: rgb(199, 195, 195);
+  color: #fff;
+  font-family: sans-serif;
+  height: 60px;
+  cursor:pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+}
+
+#pointButton{
+  /* text-align: center; */
+  background-color: rgb(97, 14, 165);
+  color: #fff;
+  font-family: sans-serif;
+  height: 60px;
+  cursor:pointer;
+  display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center; 
+
+
+}
+#myIdeaButton{
+  /* text-align: center; */
+  background-color: rgb(199, 195, 195);
+  color: #fff;
+  font-family: sans-serif;
+  height: 60px;
+  cursor:pointer;
+  display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center; 
+
+
+}
+#myInterButton{
+  /* text-align: center; */
+  background-color: rgb(199, 195, 195);
+  color: #fff;
+  font-family: sans-serif;
+  height: 60px;
+  cursor:pointer;
+  display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center; 
+
+}
+
+
+
+
+#checkInfoButton:hover{
+  background-color: gray;
+}
+
+#myIdeaButton:hover{
+  background-color: gray;
+}
+
+#myInterButton:hover{
+  background-color: gray;
+}
+#pointBox{
+  margin:50px 50px 50px 0px;
+   font-weight: 500; 
+   color: gray;
+}
+
+#pointNow{
+color: black;
+font-weight: bold;
+padding: 15px 15px 15px 0px;
+
+}
+
+#pointUse{
+  color: gray;
+  font-weight: bold;
+  padding: 15px;
+}
+#pointSave{
+  color: gray;
+  font-weight: bold;
+  padding: 15px;
+}
+
+/* #rank{
+padding-left: 25%;
+padding-right: 10%;
+margin-left: 5%;
+
+} */
+#nextRank{
+  margin-bottom: 5%;
+  border-left: 3px rgb(97, 14, 165) solid;
+  padding-left: 5%;
+  
+}
+
+
+p{
+
+  font-size: large;
+}
+@media (max-width: 992px){
+  #pointNow{
+    color: black;
+    font-weight: bold;
+    padding: 15px 15px 15px 0px;
+    
+    
+    }
+    #pointUse{
+      color: gray;
+      font-weight: bold;
+      padding: 15px;
+    }
+    #pointSave{
+      color: gray;
+      font-weight: bold;
+      padding: 15px;
+    }
+    
+  
+}
+@media (max-width: 600px){
+  #pointBox{
+    margin:50px 50px 50px 0px;
+     font-weight: 500; 
+     color: gray;
+  }
+  #rank{
+    padding: 0;
+    margin-left: 0;
+    
+    
+    }
+  #nextRank{
+    margin-top: 10%;
+    margin-bottom: 5%;
+    border-left: 0px white;
+    padding: 0;
+    
+  }
+  #pointNow{
+    color: black;
+    font-weight: bold;
+    padding: 10px 15px 10px 0px;
+    
+    
+    }
+    #pointUse{
+      color: gray;
+      font-weight: bold;
+      padding: 10px;
+    }
+    #pointSave{
+      color: gray;
+      font-weight: bold;
+      padding: 10px;
+    }
+    
+  
+}

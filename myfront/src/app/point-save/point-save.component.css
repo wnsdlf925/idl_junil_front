@@ -1,8 +1,8 @@
-#checkInfoRow{
+#pointSaveRow{
   min-width: 360px;
     width: 100%;
 }
-#checkInfoMain{
+#pointSaveMain{
   background-image:url(https://images.unsplash.com/photo-1512758017271-d7b84c2113f1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1920&q=80) ;
  background-repeat: no-repeat;
  background-position: center;
@@ -10,7 +10,7 @@
  margin-bottom: -30px;
   
 }
-#checkInfoText{
+#pointSaveText{
   color: white;
   text-align: center;
   margin: 0;
@@ -19,27 +19,25 @@
 
 }
 
-
-
-#checkInfoTitle{
+#pointSaveTitle{
   text-align: left;
 }
 
-#checkInfoTopButton{
- 
-  background-color: rgb(97, 14, 165);
+#checkInfoButton{
+  /* text-align: center; */
+  background-color: rgb(199, 195, 195);
   color: #fff;
   font-family: sans-serif;
   height: 60px;
   cursor:pointer;
   display: flex;
-    align-items: center;
-    justify-content: center; 
+  align-items: center;
+  justify-content: center; 
 }
 
 #pointButton{
   /* text-align: center; */
-  background-color: rgb(199, 195, 195);
+  background-color: rgb(97, 14, 165);
   color: #fff;
   font-family: sans-serif;
   height: 60px;
@@ -77,66 +75,97 @@
     text-align: center;
     justify-content: center; 
 
-
 }
-
-#checkInfoContentsBox{
-  
-
-  margin-top: 30px;
-  padding: 50px;
- 
- border: 1px solid silver;
- 
-}
-
-#checkInfoButton{
-width: 100%;
-padding: 0px; 
-}
-
-#checkInfoButtonBox{
-display: flex;
-justify-content: space-between;
-}
-
-/* label focus color */
-.input-field input:focus + label {
-  color: black !important;
-}
-
-/* label underline focus color */
-.input-field input:focus {
-  border-bottom: 1px black !important;
-  box-shadow: 0 1px 0 0 black !important;
+#list{
+  text-align: center;
 }
 
 
 
-#pointButton:hover{
+
+#checkInfoButton:hover{
   background-color: gray;
-
 }
+
 #myIdeaButton:hover{
   background-color: gray;
-
-
 }
+
 #myInterButton:hover{
   background-color: gray;
-
-
+}
+#pointSaveBox{
+  margin:50px 50px 30px 0px;
+   font-weight: 500; 
+   color: gray;
 }
 
+#pointNow{
+  color: gray;
+  font-weight: bold;
+  padding: 15px 15px 15px 0px;
+  font-size: large;
+  
+}
 
-
-
+#pointUse{
+  color: gray;
+  font-weight: bold;
+  padding: 15px;
+  font-size: large;
+}
+#pointSave{
+  color: black;
+  font-weight: bold;
+  padding: 15px;
+  font-size: large;
+}
 
 @media (max-width: 992px){
-  
+  #pointNow{
+    color: gray;
+    font-weight: bold;
+    padding: 15px 15px 15px 0px;
+    
+    
+  }
+  #pointUse{
+    color: gray;
+    font-weight: bold;
+    padding: 15px;
+  }
+  #pointSave{
+      color: black;
+      font-weight: bold;
+      padding: 15px;
+    }
+    
   
 }
 @media (max-width: 600px){
- 
+  #pointSaveBox{
+    margin:50px 50px 30px 0px;
+     font-weight: 500; 
+     color: gray;
+  }
+  
+  #pointNow{
+    color: gray;
+    font-weight: bold;
+    padding: 10px 15px 10px 0px;
+    
+    
+  }
+  #pointUse{
+    color: gray;
+    font-weight: bold;
+    padding: 10px;
+  }
+  #pointSave{
+    color: black;
+      font-weight: bold;
+      padding: 10px;
+    }
+    
   
 }

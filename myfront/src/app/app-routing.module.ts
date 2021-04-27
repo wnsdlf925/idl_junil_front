@@ -20,6 +20,8 @@ import { IdeaPushComponent } from './idea-push/idea-push.component';
 import { CheckInfoComponent } from './check-info/check-info.component';
 import { ReviseComponent } from './revise/revise.component';
 import { PointComponent } from './point/point.component';
+import { PointUseComponent } from './point-use/point-use.component';
+import { PointSaveComponent } from './point-save/point-save.component';
 import { MyInterComponent } from './my-inter/my-inter.component';
 import { MyIdeaComponent } from './my-idea/my-idea.component';
 import { CsDetailComponent } from './cs-detail/cs-detail.component';
@@ -56,6 +58,8 @@ const routes: Routes = [
   { path: 'board/notice/detail', component: NoticeDetailComponent  },
   { path: 'member/myIdea/ideaReset', component: IdeaResetComponent  },
   { path: 'board/cs/reset', component: CsResetComponent  },
+  { path: 'member/pointUse', component: PointUseComponent  },
+  { path: 'member/pointSave', component: PointSaveComponent  },
 
 
 

@@ -32,6 +32,8 @@ import { NoticeDetailComponent } from './notice-detail/notice-detail.component';
 import { FootComponent } from './foot/foot.component';
 import { IdeaResetComponent } from './idea-reset/idea-reset.component';
 import { CsResetComponent } from './cs-reset/cs-reset.component';
+import { PointUseComponent } from './point-use/point-use.component';
+import { PointSaveComponent } from './point-save/point-save.component';
 
 
 
@@ -68,6 +70,8 @@ import { CsResetComponent } from './cs-reset/cs-reset.component';
     FootComponent,
     IdeaResetComponent,
     CsResetComponent,
+    PointUseComponent,
+    PointSaveComponent,
     
   ],
   imports: [

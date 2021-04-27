@@ -1,8 +1,54 @@
-<p>point works!</p>
-<button type="button"><a routerLink="/member/revise">회원정보수정</a></button>
-<button type="button"><a routerLink="/member/point">포인트현황</a></button>
-<button type="button"><a routerLink="/member/myIdea">내아이디어</a></button>
-<button type="button"><a routerLink="/member/myInter">관심사업</a></button>
-<br>
+
+<div id="pointRow" class="row">
+  <div id="pointMain" class="col s12"><h3 id="pointText">포인트현황</h3></div>
+  <div class="container">
+
+    <div id="checkInfoButton" class="valign-wrapper" class="col s3 m3 l3" routerLink="/member/checkInfo"><h6>회원정보수정</h6></div>
+    <div id="pointButton" class="valign-wrapper" class="col s3 m3 l3" routerLink="/member/point"><h6>포인트현황</h6></div>
+    <div id="myIdeaButton" class="valign-wrapper" class="col s3 m3 l3" routerLink="/member/myIdea"><h6>내 아이디어</h6></div>
+    <div id="myInterButton" class="valign-wrapper" class="col s3 m3 l3" routerLink="/member/myInter"><h6>관심 사업</h6></div>
 
 
+  <div id="pointList" class="col s12 m12 l12">
+    <h5 id ="pointtext">포인트현황</h5>
+    <div style="width:4.4em; height:2px; background-color:rgb(97, 14, 165);"></div>
+    <div style="width: 100%; height:1px; background-color: rgb(199, 195, 195);"></div>
+</div>
+  <div class="col s12 m12 l12" >
+    <h6 id="pointBox"><a id = "pointNow" routerLink="/member/point">현황</a>/<a id = "pointUse" routerLink="/member/pointUse">사용내역</a>/<a id = "pointSave" routerLink="/member/pointSave">적립내역</a></h6>
+  </div>
+
+  <div class="col s12 m6 l3 center-align" >
+    <div id ="rank">
+      <p style="font-weight: bold; text-align: center;" >현재 나의 순위</p>
+      <h3  style="text-align: center;">47위</h3>
+      
+      <div class="hide-on-med-and-up" style="width: 100%; height: 10px; display: flex; justify-content: center;">
+        <div style="width:100px; border-bottom: 3px rgb(97, 14, 165) solid;"></div>
+      </div>
+
+    </div>
+  </div>
+  <div  id="nextRank" class="col s12 m6 l3" >
+    
+      <p style="font-weight: bold;">현재 보유 포인트</p>
+      <p style="font-weight: bold; float: right;">0p</p>
+      <br><br>
+      <p style="font-weight: bold;">총 누적 포인트</p>
+      <p style="font-weight: bold; float: right;">0p</p>
+      <br><br>
+      <p style="font-weight: bold;">사용포인트</p>
+      <p style="font-weight: bold; float: right;">0p</p>
+
+    
+  </div>
+
+
+
+  </div>
+  
+</div>
+
+
+
+<!-- <button type="button"><a routerLink="/member/myIdea/ideaPush">등록하기</a></button> -->

@@ -18,13 +18,30 @@
     <h5 id ="logintext">로그인</h5>
     <div style="width:4.4em; height:2px; background-color:rgb(97, 14, 165);"></div>
     <div style="width: 100%; height:1px; background-color: rgb(199, 195, 195);"></div>
-    
-    <div id="loginBox" class="col s12 m12 l12">
-      <div class="input-field col s6">
-        <input placeholder="Placeholder" id="first_name" type="text" class="validate">
-        <label for="first_name">이메일</label>
+
+ 
+   
+
+      <div class="col s12 m12 l8 offset-l2" id="loginContentsBox">
+        <div class="input-field col s12">
+          <input  id="first_name" type="text" class="validate">
+          <label for="first_name">이메일</label>
+        </div>
+        <div class="input-field col s12">
+          <input id="last_name" type="text" class="validate">
+          <label for="last_name">비밀번호</label>
+        </div>
+
+        <div id="loginButtonBox"  class="col s12 m12 l12">
+          <a id="loginButton" class="purple darken-3 waves-effect waves-light btn" routerLink="/member/checkInfo">로그인</a>
+          <a id="loginButton" class="white waves-effect waves-light btn" style="color: black; border: 1px solid black;" routerLink="/member/findPw">회원가입</a>
+          <a id="loginButtonPw" class="white waves-effect waves-light btn" style=" color: black; border: 1px solid black;" routerLink="/member/findPw">비밀번호찾기</a>
+        </div>
+        
       </div>
-    </div>
+
+      
+    
   
   
   </div>

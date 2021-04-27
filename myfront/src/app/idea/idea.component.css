@@ -19,16 +19,17 @@
 }
 #ideaRank{
   margin-bottom: 10vh;
-  min-width: 360px;
-  width: 100%;
+  
+  
 }
 #ideaList{
   margin-bottom: 10vh;
-  min-width: 360px;
-  width: 100%;
+
+  
 }
 #ideatext{
   font-family: sans-serif;
+ 
 }
 #ideaButton{
   background-color: rgb(97, 14, 165);

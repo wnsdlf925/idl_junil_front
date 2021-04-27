@@ -1,6 +1,82 @@
-<p>my-inter works!</p>
-<button type="button"><a routerLink="/member/revise">회원정보수정</a></button>
-<button type="button"><a routerLink="/member/point">포인트현황</a></button>
-<button type="button"><a routerLink="/member/myIdea">내아이디어</a></button>
-<button type="button"><a routerLink="/member/myInter">관심사업</a></button>
+
+
+
+<div id="myInterRow" class="row">
+  <div id="myInterMain" class="col s12"><h3 id="myInterText">관심 사업</h3></div>
+  <div class="container">
+
+    <div id="checkInfoButton" class="valign-wrapper" class="col s3 m3 l3" routerLink="/member/checkInfo"><h6>회원정보수정</h6></div>
+    <div id="pointButton" class="valign-wrapper" class="col s3 m3 l3" routerLink="/member/point"><h6>포인트현황</h6></div>
+    <div id="myIdeaButton" class="valign-wrapper" class="col s3 m3 l3" routerLink="/member/myIdea"><h6>내 아이디어</h6></div>
+    <div id="myInterButton" class="valign-wrapper" class="col s3 m3 l3" routerLink="/member/myInter"><h6>관심 사업</h6></div>
+
+
+  <div id="myInterList" class="col s12 m12 l12">
+    
+      <div class="row" style="margin: 0;">
+        
+        <div class="col s8 m8 l8" style="margin-top: 30px; padding-left: 0;">
+          <h5 id ="ideatext" >공고정보 게시판</h5>
+        </div>
+        
+      </div>
+      
+      
+      <div style="width:4.4em; height:2px; background-color:  rgb(97, 14, 165);"></div>
+      <div style="width: 100%; height:1px; background-color: rgb(199, 195, 195);"></div>
+      
+      <table>
+        <thead>
+          <tr>
+            <th style="border-bottom:1px rgb(0, 0, 0) solid;">번호</th>
+            <th style="border-bottom:1px rgb(0, 0, 0) solid;">제목</th>
+            <th style="border-bottom:1px rgb(0, 0, 0) solid;">작성일</th>
+          </tr>
+        </thead>
+        
+        <tbody>
+          <tr>
+            <td >1</td>
+            <td id="annoTitle">마트********</td>
+            <td >2020-20-21</td>
+          </tr>
+          <tr>
+            <td >2</td>
+            <td id="annoTitle">효과음***********</td>
+            <td >2020-20-20</td>
+          </tr>
+          <tr>
+            <td >3</td>
+            <td id="annoTitle">한국****************</td>
+            <td >2020-20-20</td>
+          </tr>
+        </tbody>
+      </table>
+      
+      
+      
+      
+      <div class="row">
+        <div class="col s12">
+          
+         
+            
+    
+    <div id= "searchBox" class="input-field col s12 m12 l4 offset-l8">
+      
+      <input type="text" id="autocomplete-input" class="autocomplete">
+      <label for="autocomplete-input"></label>
+      <i id="search" class="material-icons prefix">search</i>
+      
+      
+          </div>
+        </div>
+  
+
+
+  </div>
+  
+</div>
+
+
 
