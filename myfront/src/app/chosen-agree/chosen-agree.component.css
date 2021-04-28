@@ -1,0 +1,124 @@
+#chosenAgreeMain{
+  background-image:url(https://images.unsplash.com/photo-1512758017271-d7b84c2113f1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1920&q=80) ;
+ background-repeat: no-repeat;
+ background-position: center;
+  height: 300px;
+  margin-bottom: 50px;
+  
+}
+#chosenAgreeText{
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding-top: 125px;
+  font-weight: bold;
+  
+}
+
+
+#chosenAgreeTitle{
+  text-align: left;
+
+}
+
+
+ #chosenAgreeContentsBox{
+   /* height: 300px;
+   margin: 50px 0px 30px 0px;
+   padding: 30px; */
+
+   margin-top: 30px;
+   padding: 30px;
+  
+  border: 1px solid silver;
+  
+ }
+
+#agreeTextarea{
+  width:100%; 
+	height:300px; 
+    resize:none;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+
+[type="checkbox"]:checked+span:not(.lever):before {
+
+  border-right: 2px solid rgb(97, 14, 165);
+  border-bottom: 2px solid rgb(97, 14, 165);
+}
+
+
+#textArea{
+  margin: 15px 0px;
+}
+
+
+
+#chosenAgreeButtonBox{
+    display: flex;
+    justify-content: center;
+    
+}
+
+#chosenAgreeButton{
+  margin: 20px 0px;
+  width: 50%;
+}
+
+
+
+
+@media (max-width: 992px){
+  
+  
+  #chosenAgreeMain{
+    background-image:url(https://images.unsplash.com/photo-1512758017271-d7b84c2113f1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1920&q=80) ;
+   background-repeat: no-repeat;
+   background-position: center;
+    height: 300px;
+    margin-bottom: 50px;
+    min-width: 360px;
+    
+  }
+  #cont{
+    min-width: 360px;
+    
+  }
+  
+}
+@media (max-width: 600px){
+ 
+  
+  #chosenAgreeMain{
+    background-image:url(https://images.unsplash.com/photo-1512758017271-d7b84c2113f1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1920&q=80) ;
+   background-repeat: no-repeat;
+   background-position: center;
+    height: 300px;
+    margin-bottom: 50px;
+    min-width: 360px;
+  }
+  #cont{
+    min-width: 360px;
+    
+  }
+  #chosenAgreeButton{
+    width: 50%;
+    font-size: small;
+    padding: 0px; 
+   }
+  #chosenAgreeButtonPw{
+    width: 30%;
+    font-size: x-small;
+    padding: 0px; 
+   }
+   #chosenAgreeContentsBox{
+    
+    margin-top: 30px;
+    padding: 20px;
+   
+   border: 1px solid silver;
+   
+  }
+}

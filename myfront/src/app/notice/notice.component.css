@@ -16,15 +16,16 @@
   margin: 0;
   padding-top: 125px;
   font-weight: bold;
-
 }
-#noticeList{
-  /* margin-bottom: 40vh; */
+#noticetext{
+  margin-top: 26px;
+  margin-bottom: 19px;
 }
 
 
 #noticeTitle{
   text-align: left;
+  cursor: pointer;
 }
 
 #noticeButton{

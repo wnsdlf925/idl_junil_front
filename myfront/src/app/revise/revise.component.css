@@ -1,0 +1,177 @@
+#reviseRow{
+  min-width: 360px;
+    width: 100%;
+}
+#reviseMain{
+  background-image:url(https://images.unsplash.com/photo-1512758017271-d7b84c2113f1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1920&q=80) ;
+ background-repeat: no-repeat;
+ background-position: center;
+  height: 300px;
+ margin-bottom: -30px;
+  
+}
+#reviseText{
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding-top: 125px;
+  font-weight: bold;
+
+}
+#revisetext{
+  margin-top: 46px;
+
+}
+
+
+#reviseTitle{
+  text-align: left;
+}
+
+#checkInfoTopButton{
+ 
+  background-color: rgb(97, 14, 165);
+  color: #fff;
+  font-family: sans-serif;
+  height: 60px;
+  cursor:pointer;
+  display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+#pointButton{
+  /* text-align: center; */
+  background-color: rgb(199, 195, 195);
+  color: #fff;
+  font-family: sans-serif;
+  height: 60px;
+  cursor:pointer;
+  display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center; 
+
+
+}
+#myIdeaButton{
+  /* text-align: center; */
+  background-color: rgb(199, 195, 195);
+  color: #fff;
+  font-family: sans-serif;
+  height: 60px;
+  cursor:pointer;
+  display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center; 
+
+
+}
+#myInterButton{
+  /* text-align: center; */
+  background-color: rgb(199, 195, 195);
+  color: #fff;
+  font-family: sans-serif;
+  height: 60px;
+  cursor:pointer;
+  display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center; 
+
+
+}
+
+#reviseContentsBox{
+  
+padding: 0;
+ 
+ 
+ 
+}
+
+#reviseButton{
+width: 30%;
+padding: 0px; 
+}
+
+#reviseButtonBox{
+  display: flex;
+    justify-content: center;
+}
+
+/* label focus color */
+.input-field input:focus + label {
+  color: black !important;
+}
+
+/* label underline focus color */
+.input-field input:focus {
+  border-bottom: 1px black !important;
+  box-shadow: 0 1px 0 0 black !important;
+}
+
+.input-field input:focus + label {
+  color: black !important;
+}
+
+/* label underline focus color */
+.input-field input:focus {
+  border-bottom: 1px black !important;
+  box-shadow: 0 1px 0 0 black !important;
+}
+
+.input-field input[type=text].valid {
+  border-bottom: 1px solid rgb(55, 202, 212);
+  box-shadow: 0 1px 0 0  rgb(55, 202, 212);
+}
+
+.input-field input[type=password].valid {
+  border-bottom: 1px solid rgb(55, 202, 212);
+  box-shadow: 0 1px 0 0  rgb(55, 202, 212);
+}
+.input-field input[type=date].valid {
+  border-bottom: 1px solid rgb(55, 202, 212);
+  box-shadow: 0 1px 0 0  rgb(55, 202, 212);
+}
+.input-field input[type=tel].valid {
+  border-bottom: 1px solid rgb(55, 202, 212);
+  box-shadow: 0 1px 0 0  rgb(55, 202, 212);
+}
+
+
+
+#pointButton:hover{
+  background-color: gray;
+
+}
+#myIdeaButton:hover{
+  background-color: gray;
+
+
+}
+#myInterButton:hover{
+  background-color: gray;
+
+
+}
+
+
+
+
+
+@media (max-width: 992px){
+  #reviseButton{
+    width: 100%;
+    padding: 0px; 
+    }
+  
+}
+@media (max-width: 600px){
+ 
+  #reviseButton{
+    width: 100%;
+    padding: 0px; 
+    }
+}

@@ -1,0 +1,82 @@
+#findPwRow{
+  min-width: 360px;
+    width: 100%;
+}
+#findPwMain{
+  background-image:url(https://images.unsplash.com/photo-1512758017271-d7b84c2113f1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1920&q=80) ;
+ background-repeat: no-repeat;
+ background-position: center;
+  height: 300px;
+ margin-bottom: 20px;
+  
+}
+#findPwText{
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding-top: 125px;
+  font-weight: bold;
+
+}
+#findPwtext{
+  margin-top: 46px;
+
+}
+
+
+#findPwTitle{
+  text-align: left;
+}
+
+
+
+#findPwContentsBox{
+  
+
+  margin-top: 30px;
+  padding: 50px;
+ 
+ border: 1px solid silver;
+ 
+}
+
+#findPwButton{
+width: 100%;
+padding: 0px; 
+}
+
+#findPwButtonBox{
+display: flex;
+justify-content: space-between;
+}
+
+/* label focus color */
+.input-field input:focus + label {
+  color: black !important;
+}
+
+/* label underline focus color */
+.input-field input:focus {
+  border-bottom: 1px black !important;
+  box-shadow: 0 1px 0 0 black !important;
+}
+
+
+
+
+
+
+
+
+@media (max-width: 992px){
+  #findPwList{
+    padding: 0;
+  }
+  
+}
+@media (max-width: 600px){
+ 
+  #findPwList{
+    padding: 0;
+  }
+}
