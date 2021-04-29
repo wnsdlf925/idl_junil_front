@@ -1,0 +1,167 @@
+#csResetRow{
+  min-width: 360px;
+    width: 100%;
+    margin-bottom: 0;
+}
+
+#csResetMain{
+  background-image:url(https://images.unsplash.com/photo-1512758017271-d7b84c2113f1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1920&q=80) ;
+ background-repeat: no-repeat;
+ background-position: center;
+  height: 300px;
+  margin-bottom: 50px;
+  
+}
+
+
+
+
+#csResetText{
+  display: flex;
+  align-items: center;
+  line-height: 50px
+}
+#csResetMainText{
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding-top: 125px;
+  font-weight: bold;
+  
+}
+
+
+#csResetTitle{
+  text-align: left;
+}
+
+
+#buttonBox{
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+
+#csResetButton{
+  
+  width: 25%;
+}
+
+#cke{
+  min-height: 500px;
+}
+
+
+:host ::ng-deep .ck-editor__editable_inline {
+  min-height: 400px;
+  max-height: 400px;
+}
+/* label focus color */
+.input-field input[type=text]:focus + label {
+  color: #000;
+}
+/* label underline focus color */
+.input-field input[type=text]:focus {
+  border-bottom: 1px solid #000;
+  box-shadow: 0 1px 0 0 #000;
+}
+
+.input-field input[type=text].valid {
+  border-bottom: 1px solid rgb(55, 202, 212);
+  box-shadow: 0 1px 0 0  rgb(55, 202, 212);
+}
+
+
+@media (max-width: 992px){
+  
+  #csResetMain{
+    background-image:url(https://images.unsplash.com/photo-1512758017271-d7b84c2113f1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1920&q=80) ;
+   background-repeat: no-repeat;
+   background-position: center;
+    height: 300px;
+    margin-bottom: 50px;
+    min-width: 360px;
+    
+  }
+  
+  #csResetRow{
+    min-width: 360px;
+      width: 100%;
+  }
+  #buttonBox{
+    height: 80px;
+    visibility: hidden;
+   
+  }
+  #smallButtonCan{
+    color: black;
+    float: right;
+    font-size: medium;
+    font-weight: 600;
+    font-family: sans-serif;
+    height: 100%;
+    border: 0px 10px 0px 10px;
+    margin: 0px 10px 0px 10px;
+    cursor: pointer;
+    }
+    #smallButtonUp{
+      color: rgb(97, 14, 165);
+      float: right;
+      font-size: medium;
+      font-weight: 600;
+      font-family: sans-serif;
+      height: 100%;
+      padding-right: 10px;
+      border-right: 2px solid silver;
+      cursor: pointer;
+      }
+   
+}
+@media (max-width: 600px){
+ 
+  #csResetMain{
+    background-image:url(https://images.unsplash.com/photo-1512758017271-d7b84c2113f1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1920&q=80) ;
+   background-repeat: no-repeat;
+   background-position: center;
+    height: 300px;
+    margin-bottom: 50px;
+    min-width: 360px;
+    
+  }
+  
+  #csResetRow{
+    min-width: 360px;
+      width: 100%;
+  }
+  #buttonBox{
+    height: 80px;
+    visibility: hidden;
+    
+  }
+  #smallButtonCan{
+    color: black;
+    float: right;
+    font-size: medium;
+    font-weight: 600;
+    font-family: sans-serif;
+    height: 100%;
+    border: 0px 10px 0px 10px;
+    margin: 0px 10px 0px 10px;
+    cursor: pointer;
+    }
+    #smallButtonUp{
+      color: rgb(97, 14, 165);
+      float: right;
+      font-size: medium;
+      font-weight: 600;
+      font-family: sans-serif;
+      height: 100%;
+      padding-right: 10px;
+      border-right: 2px solid silver;
+      cursor: pointer;
+      }
+    
+}
