@@ -1,9 +1,11 @@
 
 
 <app-top-bar></app-top-bar>
-
+<!-- <a img id="sidebarBox"  data-target="slide-out" (click) = "onside()" class="sidenav-trigger"><img id="sidebar" src="http://bicdataidea.com/img/img_mobile_trigger.png"></a>
+<div [class.sideBar2]="sideBtn"></div> -->
 <div [@fadeInAnimation]="prepareRoute(outlet)">
   <router-outlet #outlet="outlet"></router-outlet>
+  
 </div>
 <!-- <router-outlet></router-outlet> -->
 <app-foot></app-foot>

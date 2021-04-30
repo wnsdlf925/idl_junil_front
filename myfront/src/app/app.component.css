@@ -1,0 +1,35 @@
+#sidebar{
+ 
+  position:relative;
+  left: 100px;
+  bottom: 50px;
+  
+z-index: 1;
+  
+}
+#sidebarBox{
+margin: 0;
+padding: 0;
+}
+.sideBar{
+  background-color: red;
+  height: 100vh;
+  width: 30%;
+}
+
+.sideBar1{
+  background-color: blue;
+  height: 100vh;
+  width: 30%;
+}
+
+.sideBar2{
+  
+  background-color: black;
+  display: none;
+  height: 100vh;
+  width: 30%;
+  opacity: 0.01;
+  
+}
+

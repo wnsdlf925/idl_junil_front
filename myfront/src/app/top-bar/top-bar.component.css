@@ -72,94 +72,60 @@ a:active{
 
 
 
-.modal_wrap{
-  display: none;
-  width: 500px;
-  height: 500px;
-  position: absolute;
-  top:50%;
-  left: 50%;
-  margin: -250px 0 0 -250px;
-  background:#eee;
-  z-index: 2;
-}
-.black_bg{
-  display: none;
-  position: absolute;
-  content: "";
-  width: 100%;
-  height: 100%;
-  background-color:rgba(0, 0,0, 0.5);
-  top:0;
-  left: 0;
+
+
+
+
+
+
+
+
+
+.sideBar{
   z-index: 1;
-}
-.modal_close{
-  width: 26px;
-  height: 26px;
-  position: absolute;
-  top: -30px;
-  right: 0;
-}
-.modal_close> a{
-  display: block;
-  width: 100%;
+  position:fixed;
+  background-color: black;
   height: 100%;
-  background:url(https://img.icons8.com/metro/26/000000/close-window.png);
-  text-indent: -9999px;
+  width: 100%;
+  opacity: 0.5;
+  float: right;
 }
 
-
-
-
-
-
-
-
-
-/* .modal_wrap{
-  display: none;
-  width: 500px;
-  height: 500px;
-  position: absolute;
-  top:50%;
-  left: 50%;
-  margin: -250px 0 0 -250px;
-  background:#eee;
+#smallSide{
+  float: right;
+  position:fixed;
   z-index: 2;
+  background-color: white;
+  width: 30%;
+  left: 75%;
+  opacity: 1;
 }
-.black_bg{
-  display: none;
-  position: absolute;
-  content: "";
-  width: 100%;
-  height: 100%;
-  background-color:rgba(0, 0,0, 0.5);
-  top:0;
-  left: 0;
-  z-index: 1;
+
+#sideList{
+  width: 80%;
 }
-.modal_close{
-  width: 26px;
-  height: 26px;
-  position: absolute;
-  top: -30px;
-  right: 0;
+
+#sideRow{
+  /* animation-name: jaehee;
+  animation-duration:2s;
+  animation-duration: leaner;
+  animation-iteration-count:3;
+  animation-direction:alternate;
+  animation-fill-mode: forwards; */
+  
 }
-.modal_close> a{
-  display: block;
-  width: 100%;
-  height: 100%;
-  background:url(https://img.icons8.com/metro/26/000000/close-window.png);
-  text-indent: -9999px;
-} */
 
 
+#icon{
+  margin-top: 15%;
+  font-size: 40px;
+  float: right;
+  margin-bottom: 0px;
+}
 
-
-
-
-
+#sideLI{
+  font-size: large;
+}
 
 
 

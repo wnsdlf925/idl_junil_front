@@ -13,9 +13,19 @@ import { fadeInAnimation } from './animations';
   host: { '[@fadeInAnimation]': '' }
 })
 export class AppComponent {
+
+  sideBtn = false;
+    
+  
+  onside():void{
+   this.sideBtn = true;
+    console.log(this.sideBtn)
+   
+   }
   prepareRoute(outlet: RouterOutlet) {
     return outlet && outlet.activatedRouteData && outlet.activatedRouteData.animation;
   }
+  
   
   
   title = 'myfront';
