@@ -14,9 +14,8 @@ export class TopBarComponent implements OnInit {
   
   
   sideBtn = false;
-    
   
-   onside():void{
+  onside():void{
     this.sideBtn = true;
      console.log(this.sideBtn)
     
