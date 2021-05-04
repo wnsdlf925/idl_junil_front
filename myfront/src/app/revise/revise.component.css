@@ -175,3 +175,30 @@ padding: 0px;
     padding: 0px; 
     }
 }
+
+@media (max-width: 530px){
+  #checkInfoTopButton{
+ 
+   padding: 0;
+  }
+  
+  #pointButton{
+    padding: 0;
+  
+  
+  }
+  #myIdeaButton{
+      padding: 0;
+  
+  }
+  #myInterButton{
+      padding: 0;
+  
+  
+  }
+  #buttonFont{
+    padding: 0;
+  font-size: small;
+  }
+  
+}

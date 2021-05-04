@@ -85,7 +85,11 @@ padding-right: 40px;
 
 /* label underline focus color */
 .row .input-field input:focus {
-  border-bottom: 1px black !important;
+  /* border-bottom: 1px black !important; */
+  /* box-shadow: 0 1px 0 0 black !important; */
+}
+.row .input-field input[type=text]:focus{
+ border-bottom: 1px black !important;
   box-shadow: 0 1px 0 0 black !important;
 }
 

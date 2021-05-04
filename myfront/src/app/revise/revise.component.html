@@ -4,10 +4,10 @@
   <div id="reviseMain" class="col s12"><h3 id="reviseText">회원정보수정</h3></div>
   <div class="container">
 
-    <div id="checkInfoTopButton" class="valign-wrapper" class="col s3 m3 l3" routerLink="/member/revise"><h6>회원정보수정</h6></div>
-    <div id="pointButton" class="valign-wrapper" class="col s3 m3 l3" routerLink="/member/point"><h6>포인트현황</h6></div>
-    <div id="myIdeaButton" class="valign-wrapper" class="col s3 m3 l3" routerLink="/member/myIdea"><h6>내 아이디어</h6></div>
-    <div id="myInterButton" class="valign-wrapper" class="col s3 m3 l3" routerLink="/member/myInter"><h6>관심 사업</h6></div>
+    <div id="checkInfoTopButton" class="valign-wrapper" class="col s3 m3 l3" routerLink="/member/revise"><h6 id="buttonFont">회원정보수정</h6></div>
+    <div id="pointButton" class="valign-wrapper" class="col s3 m3 l3" routerLink="/member/point"><h6 id="buttonFont">포인트현황</h6></div>
+    <div id="myIdeaButton" class="valign-wrapper" class="col s3 m3 l3" routerLink="/member/myIdea"><h6 id="buttonFont">내 아이디어</h6></div>
+    <div id="myInterButton" class="valign-wrapper" class="col s3 m3 l3" routerLink="/member/myInter"><h6 id="buttonFont">관심 사업</h6></div>
 
 
   <div id="reviseList" class="col s12 m12 l12">
@@ -22,24 +22,24 @@
 <div class="col s12 m12 l12" id="reviseContentsBox">
 
   <div class="input-field col s12" style="margin-bottom: 0;">
-    <input id="reviseEmail" type="email" class="validate"  style="margin-bottom: 0;">
+    <input id="reviseEmail" type="email" maxlength='40' class="validate"  style="margin-bottom: 0;">
     <label for="reviseEmail">이메일</label>
     <span class="helper-text" data-error="wrong" data-success="right"></span>
   </div>
 
   <div class="input-field col s12" >
-    <input id="reviseName" type="text" class="validate" >
+    <input id="reviseName" type="text" maxlength='40' class="validate" >
     <label for="reviseName">이름</label>
   </div>
 
   <div class="input-field col s12" >
-    <input id="revisePw" type="password" class="validate"  >
+    <input id="revisePw" type="password" maxlength='40' class="validate"  >
     <label for="revisePw">비밀번호</label>
    
   </div>
 
   <div class="input-field col s12">
-    <input id="revise" type="password" class="validate">
+    <input id="revise" type="password" maxlength='40' class="validate">
     <label for="revise">비밀번호확인</label>
   </div>
   
@@ -60,12 +60,12 @@
   </div>
 
   <div class="input-field col s12">
-    <input id="reviseTel" type="tel" class="validate">
+    <input id="reviseTel" type="tel" maxlength='40' class="validate">
     <label for="reviseTel">전화번호</label>
   </div>
 
   <div class="input-field col s12">
-    <input id="reviseCom" type="text" class="validate">
+    <input id="reviseCom" type="text" maxlength='40' class="validate">
     <label for="reviseCom">소속</label>
   </div>
 

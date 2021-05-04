@@ -53,6 +53,9 @@
 #cke{
   min-height: 500px;
 }
+#csUploadCheckbox{
+  margin-top: 23px;
+}
 
 
 :host ::ng-deep .ck-editor__editable_inline {
@@ -72,6 +75,11 @@
 .input-field input[type=text].valid {
   border-bottom: 1px solid rgb(55, 202, 212);
   box-shadow: 0 1px 0 0  rgb(55, 202, 212);
+}
+[type="checkbox"]:checked+span:not(.lever):before {
+
+  border-right: 2px solid rgb(97, 14, 165);
+  border-bottom: 2px solid rgb(97, 14, 165);
 }
 
 
@@ -104,7 +112,7 @@
     font-family: sans-serif;
     height: 100%;
     border: 0px 10px 0px 10px;
-    margin: 0px 10px 0px 10px;
+    margin: 15.3px 10px 0px 10px;
     cursor: pointer;
     }
     #smallButtonUp{
@@ -117,7 +125,9 @@
       padding-right: 10px;
       border-right: 2px solid silver;
       cursor: pointer;
+      margin-top: 15.3px;
       }
+      
    
 }
 @media (max-width: 600px){
@@ -149,7 +159,7 @@
     font-family: sans-serif;
     height: 100%;
     border: 0px 10px 0px 10px;
-    margin: 0px 10px 0px 10px;
+    margin: 15.3px 10px 0px 10px;
     cursor: pointer;
     }
     #smallButtonUp{
@@ -164,4 +174,15 @@
       cursor: pointer;
       }
     
+}
+@media (max-width: 465px){
+  
+  #csUploadText{
+   font-size: small;
+  }
+  #csFileFont{
+    padding: 0;
+    width: 70px;
+    font-size: small;
+  }
 }

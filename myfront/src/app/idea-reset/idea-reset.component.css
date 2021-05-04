@@ -1,10 +1,10 @@
-#ideaPushRow{
+#ideaResetRow{
   min-width: 360px;
     width: 100%;
     margin-bottom: 0;
 }
 
-#ideaPushMain{
+#ideaResetMain{
   background-image:url(https://images.unsplash.com/photo-1512758017271-d7b84c2113f1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1920&q=80) ;
  background-repeat: no-repeat;
  background-position: center;
@@ -16,12 +16,12 @@
 
 
 
-#ideaPushText{
+#ideaResetText{
   display: flex;
   align-items: center;
   line-height: 50px
 }
-#ideaPushMainText{
+#ideaResetMainText{
   color: white;
   text-align: center;
   margin: 0;
@@ -31,7 +31,7 @@
 }
 
 
-#ideaPushTitle{
+#ideaResetTitle{
   text-align: left;
 }
 
@@ -45,7 +45,7 @@
 }
 
 
-#ideaPushButton{
+#ideaResetButton{
   
   width: 25%;
 }
@@ -82,7 +82,7 @@
 
 @media (max-width: 992px){
   
-  #ideaPushMain{
+  #ideaResetMain{
     background-image:url(https://images.unsplash.com/photo-1512758017271-d7b84c2113f1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1920&q=80) ;
    background-repeat: no-repeat;
    background-position: center;
@@ -92,7 +92,7 @@
     
   }
   
-  #ideaPushRow{
+  #ideaResetRow{
     min-width: 360px;
       width: 100%;
   }
@@ -101,7 +101,7 @@
     visibility: hidden;
    
   }
-  #smallButtonCan{
+  #ideaResetsmallButtonCan{
     color: black;
     float: right;
     font-size: medium;
@@ -109,10 +109,10 @@
     font-family: sans-serif;
     height: 100%;
     border: 0px 10px 0px 10px;
-    margin: 0px 10px 0px 10px;
+    margin: 15.3px 10px 0px 10px;
     cursor: pointer;
     }
-    #smallButtonUp{
+    #ideaResetsmallButtonUp{
       color: rgb(97, 14, 165);
       float: right;
       font-size: medium;
@@ -122,12 +122,13 @@
       padding-right: 10px;
       border-right: 2px solid silver;
       cursor: pointer;
+      margin-top: 15.3px;
       }
    
 }
 @media (max-width: 600px){
  
-  #ideaPushMain{
+  #ideaResetMain{
     background-image:url(https://images.unsplash.com/photo-1512758017271-d7b84c2113f1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1920&q=80) ;
    background-repeat: no-repeat;
    background-position: center;
@@ -137,7 +138,7 @@
     
   }
   
-  #ideaPushRow{
+  #ideaResetRow{
     min-width: 360px;
       width: 100%;
   }
@@ -146,7 +147,7 @@
     visibility: hidden;
     
   }
-  #smallButtonCan{
+  #ideaResetsmallButtonCan{
     color: black;
     float: right;
     font-size: medium;
@@ -154,10 +155,10 @@
     font-family: sans-serif;
     height: 100%;
     border: 0px 10px 0px 10px;
-    margin: 0px 10px 0px 10px;
+    margin: 15.3px 10px 0px 10px;
     cursor: pointer;
     }
-    #smallButtonUp{
+    #ideaResetsmallButtonUp{
       color: rgb(97, 14, 165);
       float: right;
       font-size: medium;
@@ -167,6 +168,23 @@
       padding-right: 10px;
       border-right: 2px solid silver;
       cursor: pointer;
+      margin-top: 15.3px;
       }
     
+}
+
+@media (max-width: 465px){
+  #ideaResetSecText{
+    font-size: medium;
+    font-weight: bold;
+  }
+  #ideaResetText{
+    font-size: small;
+  }
+
+  #ideaResetFileFont{
+    padding: 0;
+    width: 70px;
+    font-size: small;
+  }
 }

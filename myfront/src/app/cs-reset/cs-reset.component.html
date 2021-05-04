@@ -21,15 +21,15 @@
 
 
       <div class="row" style="margin-bottom: 0;">
-        <div class="col s2">
+        <div class="col s2" style="padding-right: 0;">
 
-          <h6 id="csResetText" style="font-weight: bold; font-size: 15px;">이메일</h6>
+          <h6 id="csResetText" style="font-weight: bold; ">이메일</h6>
         </div>
         <form class="col s10">
           
           <div class="row" style="margin-top: 0px; margin-bottom: 10px;">
             <div class="input-field col s12" style="margin-bottom: 0;">
-              <input id="email" type="text" class="validate" style="margin-bottom: 0;">
+              <input id="email" type="text" maxlength='40' class="validate" style="margin-bottom: 0;">
               <label for="email">이메일</label>
             </div>
           </div>
@@ -40,14 +40,14 @@
 
       <div class="row" style="margin-bottom: 0;">
         <div class="col s2">
-          <h6 id="csResetText" style="font-weight: bold; font-size: small; font-size: 15px;">제목</h6>
+          <h6 id="csResetText" style="font-weight: bold; ">제목</h6>
         </div>
         <form class="col s10">
          
 
           <div class="row" style="margin-top: 0px; margin-bottom: 10px;">
             <div class="input-field col s12" style="margin-bottom: 0;">
-              <input id="title" type="text" class="validate" style="margin-bottom: 0;">
+              <input id="title" type="text" maxlength='40' class="validate" style="margin-bottom: 0;">
               <label for="title">제목</label>
             </div>
           </div>
@@ -59,7 +59,7 @@
 
       <div class="row" style="margin-bottom: 0;">
         <div class="col s2">
-          <h6 id="csResetText" style="font-weight: bold; font-size: small; font-size: 15px;">내용</h6>
+          <h6 id="csResetText" style="font-weight: bold; ">내용</h6>
         </div>
         <div class="col s10" style="margin-top:15px ;">
           <div class="cke">
@@ -81,12 +81,12 @@
 
             <form action="#">
               <div class="file-field input-field">
-              <div class="purple darken-3 btn">
-                <span>File</span>
+              <div id="csResetFileFont"class="purple darken-3 btn">
+                <span>파일첨부</span>
                 <input type="file" multiple>
               </div>
               <div class="file-path-wrapper">
-                <input class="file-path validate" type="text">
+                <input class="file-path validate" type="text" maxlength='400'>
               </div>
             </div>
           </form>

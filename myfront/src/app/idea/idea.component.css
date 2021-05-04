@@ -35,6 +35,7 @@
   background-color: rgb(97, 14, 165);
   float: right;
   margin-top: 11px;
+  width: 160px;
 }
 #ideaTitle{
   text-align: left;
@@ -125,4 +126,15 @@ padding-right: 40px;
     display:none
   }
   
+}
+
+@media(max-width:480px){
+  #ideaButton{
+    background-color: rgb(97, 14, 165);
+    float: right;
+    margin-top: 11px;
+    width: 140px;
+    font-size: small;
+    padding: 0px 0px 0px 0px;
+  }
 }

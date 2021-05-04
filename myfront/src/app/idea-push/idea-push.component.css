@@ -104,8 +104,9 @@
     font-family: sans-serif;
     height: 100%;
     border: 0px 10px 0px 10px;
-    margin: 0px 10px 0px 10px;
+    margin: 15.3px 10px 0px 10px;
     cursor: pointer;
+    
     }
     #smallButtonUp{
       color: rgb(97, 14, 165);
@@ -117,8 +118,10 @@
       padding-right: 10px;
       border-right: 2px solid silver;
       cursor: pointer;
+      margin-top: 15.3px;
       }
-   
+
+      
 }
 @media (max-width: 600px){
  
@@ -149,8 +152,9 @@
     font-family: sans-serif;
     height: 100%;
     border: 0px 10px 0px 10px;
-    margin: 0px 10px 0px 10px;
+    margin: 15.3px 10px 0px 10px;
     cursor: pointer;
+    
     }
     #smallButtonUp{
       color: rgb(97, 14, 165);
@@ -162,6 +166,28 @@
       padding-right: 10px;
       border-right: 2px solid silver;
       cursor: pointer;
+      margin-top: 15.3px;
       }
     
+}
+
+@media (max-width: 465px){
+  #ideaPushSecText{
+    font-size: medium;
+    font-weight: bold;
+  }
+  #ideaPushText{
+   font-size: small;
+  }
+  #ideaPushList{
+    width: 100%;
+  }
+  #ideaPushContents{
+    width: 100%;
+  }
+  #ideaPushFileFont{
+    padding: 0;
+    width: 70px;
+    font-size: small;
+  }
 }

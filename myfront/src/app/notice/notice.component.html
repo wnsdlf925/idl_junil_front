@@ -8,12 +8,13 @@
     <div id="noticeButton" class="valign-wrapper" class="col s6 m6 l6" routerLink="/board/notice"><h6 >공지사항</h6></div>
     <div id="csButton" class="valign-wrapper" class="col s6 m6 l6" routerLink="/board/cs"><h6  >문의게시판</h6></div>
     
-  <div id="noticeList" class="col s12 m12 l12">
+  <div id="noticeList" class="col s12 m12 l12" style="padding: 0;">
     <h5 id ="noticetext">공지사항</h5>
     <div style="width:4.4em; height:2px; background-color:rgb(97, 14, 165);"></div>
     <div style="width: 100%; height:1px; background-color: rgb(199, 195, 195);"></div>
+    </div>
     
-    
+    <div>
     <table>
     <thead>
       <tr>
@@ -65,7 +66,7 @@
     </div>
     <div id= "searchBox" class="input-field col s12 m12 l4">
       
-      <input type="text" id="autocomplete-input" class="autocomplete">
+      <input type="text" maxlength='40' id="autocomplete-input" class="autocomplete">
       <label for="autocomplete-input"></label>
       <i id="search" class="material-icons prefix">search</i>
      
