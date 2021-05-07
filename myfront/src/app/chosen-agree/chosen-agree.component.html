@@ -111,7 +111,7 @@
           </textarea>
               <label>
                 <input type="checkbox" id="textArea1" />
-                <span  id="textArea" > <p style="color: black; margin: 0px;">[필수] 이용약관동의에 동의합니다.</p></span>
+                <span  id="textArea" (click) = "check1()" > <p style="color: black; margin: 0px;">[필수] 이용약관동의에 동의합니다.</p></span>
               </label>
 
 
@@ -145,7 +145,7 @@
               </textarea>
                   <label>
                     <input type="checkbox" id="textArea2" />
-                    <span  id="textArea" > <p style="color: black; margin: 0px;">[필수] 개인정보수집 밎 이용동의</p></span>
+                    <span  id="textArea" (click) = "check2()"> <p style="color: black; margin: 0px;">[필수] 개인정보수집 밎 이용동의</p></span>
                   </label>
 
 
@@ -172,7 +172,8 @@
                   </label>
                   
                   <div id="chosenAgreeButtonBox"  class="col s12 m12 l12">
-                  <a id="chosenAgreeButton" class="purple darken-3 waves-effect waves-light btn" routerLink="/member/join">확인</a>
+                  <a id="chosenAgreeButton" class="purple darken-3 waves-effect waves-light btn" (click)="agree()" >확인</a>
+                  
                   </div>
 
       </div>

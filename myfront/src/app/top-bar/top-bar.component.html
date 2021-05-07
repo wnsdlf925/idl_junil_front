@@ -26,30 +26,30 @@
 
     <div id="navList" class="col s3 m3">
       
-      <a (click) = "onside()" class="sidenav-trigger"><img id="sidebar" src="http://bicdataidea.com/img/img_mobile_trigger.png"></a>
+      <a (click)="onside()" class="sidenav-trigger"><img id="sidebar" src="http://bicdataidea.com/img/img_mobile_trigger.png"></a>
       
     </div>
-    <div [class.sideBar]="sideBtn"  (click) = "offside()" [ngStyle]="{'width':backWid}"></div>
+    <div [class.sideBar]="sideBtn"  (click)="offside()" [ngStyle]="{'width':backWid}"></div>
 
     <div id="mySidenav" class="mySidenav" [ngStyle]="{'width':wid}">
       <div id="sideList" class="col l9">
-        <a  (click) = "offside()" routerLink="/home"><i id="icon" class="small material-icons">home</i></a>
+        <a  (click)="offside()" routerLink="/home"><i id="icon" class="small material-icons">home</i></a>
 
-        <li id="sideLI" style="margin-top: 56px;"><a  (click) = "offside()" routerLink="/board/idea" >아이디어 플랫폼</a></li>
+        <li id="sideLI" style="margin-top: 56px;"><a  (click)="offside()" routerLink="/board/idea" >아이디어 플랫폼</a></li>
         <div style="width:3em; height:2px; background-color:rgb(55, 202, 212);"></div>
         <div style="width: 100%; height:1px; background-color: rgb(199, 195, 195);"></div>
 
-        <li id="sideLI" ><a  (click) = "offside()" routerLink="/board/anno">공고정보 게시판</a></li>
+        <li id="sideLI" ><a  (click)="offside()" routerLink="/board/anno">공고정보 게시판</a></li>
         <div style="width:3em; height:2px; background-color:rgb(97, 14, 165);"></div>
         <div style="width: 100%; height:1px; background-color: rgb(199, 195, 195);"></div>
         
-        <li id="sideLI"><a  (click) = "offside()" routerLink="/board/notice">게시판</a></li>
+        <li id="sideLI"><a  (click)="offside()" routerLink="/board/notice">게시판</a></li>
         
-        <li id="sideLI"><a  (click) = "offside()" routerLink="/board/contact">고객센터</a></li>
+        <li id="sideLI"><a  (click)="offside()" routerLink="/board/contact">고객센터</a></li>
         
-        <li id="sideLI"><a  (click) = "offside()" routerLink="/member/login">로그인</a></li>
+        <li id="sideLI"><a  (click)="offside()" routerLink="/member/login">로그인</a></li>
         
-        <li id="sideLI"><a  (click) = "offside()" routerLink="/member/checkInfo">마이페이지</a></li>
+        <li id="sideLI"><a  (click)="offside()" routerLink="/member/checkInfo">마이페이지</a></li>
         <div style="width: 100%; height:1px; background-color: rgb(199, 195, 195);"></div>
       </div>
     </div>
