@@ -24,21 +24,12 @@
       </thead>
       
       <tbody>
-        <tr>
+        <tr *ngFor="let lists of list">
           <td >1</td>
-          <td id="annoTitle">마트********</td>
-          <td >2020-20-21</td>
+          <td id="annoTitle">{{list.postNum}}</td>
+          <td >{{list.postNum}}</td>
         </tr>
-        <tr>
-          <td >2</td>
-          <td id="annoTitle">효과음***********</td>
-          <td >2020-20-20</td>
-        </tr>
-        <tr>
-          <td >3</td>
-          <td id="annoTitle">한국****************</td>
-          <td >2020-20-20</td>
-        </tr>
+        
       </tbody>
     </table>
     
