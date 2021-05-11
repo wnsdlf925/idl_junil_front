@@ -18,20 +18,22 @@
       <thead>
         <tr>
           <th style="border-bottom:1px rgb(0, 0, 0) solid;">번호</th>
+
           <th style="border-bottom:1px rgb(0, 0, 0) solid;">제목</th>
           <th style="border-bottom:1px rgb(0, 0, 0) solid;">작성일</th>
         </tr>
       </thead>
       
       <tbody>
-        <tr *ngFor="let lists of list">
-          <td >1</td>
-          <td id="annoTitle">{{list.postNum}}</td>
-          <td >{{list.postNum}}</td>
+        <tr *ngFor="let lists of listTitle; let i = index;" >
+          <td >{{totalNum-((paramPageNum-1)*15)-i}}</td>
+          <td id="annoTitle">{{list.result[0][i].anno_title}}</td>
+          <td >{{list.result[0][i].anno_date}}</td>
         </tr>
         
       </tbody>
     </table>
+    
     
   </div>
     <!-- 리스트 -->
@@ -45,14 +47,11 @@
       <div class="input-field col s0 m0 l8">
         <ul class="pagination">
           <li class="disabled"><a><i class="material-icons">chevron_left</i></a></li>
-          <li class="active"><a >1</a></li>
-          <li class="waves-effect"><a >2</a></li>
-          <li class="waves-effect"><a >3</a></li>
-          <li class="waves-effect"><a >4</a></li>
-          <li class="waves-effect"><a >5</a></li>
-          <li class="waves-effect"><a ><i class="material-icons">chevron_right</i></a></li>
+          <li *ngFor="let page of pageArr; let i = index;" [class.active]="pagePoint(i+1)" class="white waves-effect"><a (click)="changePage(i+1)">{{i+1}}</a></li>
+          <li  class="waves-effect"><a ><i class="material-icons">chevron_right</i></a></li>
 <!-- 모바일은 더보기로 -->
         </ul>
+        
       </div>
       <div id= "searchBox" class="input-field col s12 m12 l4">
         
