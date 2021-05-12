@@ -32,6 +32,7 @@
         </tr>
         
       </tbody>
+
     </table>
     
     
@@ -46,9 +47,9 @@
     
       <div class="input-field col s0 m0 l8">
         <ul class="pagination">
-          <li class="disabled"><a><i class="material-icons">chevron_left</i></a></li>
-          <li *ngFor="let page of pageArr; let i = index;" [class.active]="pagePoint(i+1)" class="white waves-effect"><a (click)="changePage(i+1)">{{i+1}}</a></li>
-          <li  class="waves-effect"><a ><i class="material-icons">chevron_right</i></a></li>
+          <li [class.waves-effect]="backPageAble()" class="disabled"><a (click)="backPage()"><i class="material-icons">chevron_left</i></a></li>
+          <li *ngFor="let page of pageArr;" [class.active]="pagePoint(page)" class="white waves-effect"><a (click)="changePage(page)">{{page}}</a></li>
+          <li  class="waves-effect"><a a (click)="nextPage()" ><i class="material-icons">chevron_right</i></a></li>
 <!-- 모바일은 더보기로 -->
         </ul>
         
