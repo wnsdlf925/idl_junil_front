@@ -27,7 +27,7 @@
       <tbody>
         <tr *ngFor="let lists of listTitle; let i = index;" >
           <td >{{totalNum-((paramPageNum-1)*15)-i}}</td>
-          <td id="annoTitle">{{list.result[0][i].anno_title}}</td>
+          <td  id="annoTitle">{{list.result[0][i].anno_title}}</td>
           <td >{{list.result[0][i].anno_date}}</td>
         </tr>
         
@@ -56,9 +56,10 @@
       </div>
       <div id= "searchBox" class="input-field col s12 m12 l4">
         
-        <input type="text" maxlength='40' id="autocomplete-input" class="autocomplete">
-        <label for="autocomplete-input"></label>
-        <i id="search" class="material-icons prefix">search</i>
+          <input type="text" maxlength='40' id="autocomplete-input" class="autocomplete">
+          <label for="autocomplete-input" ></label>
+          <i id="search" class="material-icons prefix" (click)="search()">search</i>
+        
        
       
     </div>

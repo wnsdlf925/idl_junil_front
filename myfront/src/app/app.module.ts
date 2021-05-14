@@ -81,6 +81,7 @@ import { PointSaveComponent } from './point-save/point-save.component';
     BrowserAnimationsModule,
     AppRoutingModule,
     CKEditorModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

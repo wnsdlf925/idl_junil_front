@@ -10,8 +10,10 @@ import { HttpClient} from '@angular/common/http';
 })
 export class AnnoComponent implements OnInit {
   
-  constructor(public http:HttpClient) { }
-
+  constructor(public http:HttpClient, ) { 
+    
+  }
+  
   
   
   list:any = []; //api 받아오기
@@ -29,6 +31,8 @@ export class AnnoComponent implements OnInit {
   lastPageArr: any =[];
   disLeft:any = "none" ; 
   disRight:any = "inline-table" ; 
+  searchWord: any;
+
   
   ngOnInit(): void {
     
@@ -37,16 +41,47 @@ export class AnnoComponent implements OnInit {
       this.listTitle = data.result[0];
       this.totalPageNum=data.postNum;
       this.totalNum=data.result[1][0].num
-      this.pageMath = Math.floor(this.totalPageNum/5)
-      this.lastPage = (this.pageMath)*5+1;
-      for(let i=1; i<=this.totalPageNum%5; i++){
-        this.lastPageArr.push(this.pageMath*5+i);
+      if(this.totalPageNum%5 == 0){
+        this.pageMath = this.totalPageNum/5;
+        this.lastPage = (this.pageMath)*5-4;
+        
+        for(let i=0; i<5; i++){
+          this.lastPageArr.push(this.lastPage+i);
+        }
+      }else{
+        this.pageMath = Math.floor(this.totalPageNum/5);
+        this.lastPage = (this.pageMath)*5+1;
+        
+        for(let i=1; i<=this.totalPageNum%5; i++){
+          this.lastPageArr.push(this.pageMath*5+i);
+        }
+
+      }
+      if(this.lastPage ==1){
+        this.pageArr = this.lastPageArr
+        this.disRight = "none";
       }
       console.log(" this.lastPage: "+ this.lastPage)
       console.log("onInit")
       
     })
   }
+
+  search(){
+    this.searchWord = (<HTMLInputElement>document.getElementById("autocomplete-input")).value;
+    console.log("searchWord: "+this.searchWord)
+    this.http.get<any>('http://localhost:3000/board/anno?pageNum='+this.paramPageNum).subscribe(data=>{
+      this.list = data;
+      this.listTitle = data.result[0];
+      this.totalPageNum=data.postNum;
+      
+      
+    })
+
+  }
+
+  
+
   changePage(a:number){
     this.paramPageNum = a;
     this.http.get<any>('http://localhost:3000/board/anno?pageNum='+this.paramPageNum).subscribe(data=>{
@@ -63,10 +98,12 @@ export class AnnoComponent implements OnInit {
 
 
   nextPage(){
-    
-    this.pageJump = (5*(this.nextPageNum))+1
 
+    this.pageJump = (5*(this.nextPageNum))+1
+    console.log("this.lastPage :"+this.lastPage )
+    console.log("this.pageJump :"+this.pageJump )
     if(this.lastPage > this.pageJump){
+      ++this.nextPageNum
       this.disLeft = "inline-table" ; 
 
       for( let i = 0; i< this.pageArr.length;i++){
@@ -74,12 +111,12 @@ export class AnnoComponent implements OnInit {
             this.oriPageArr[i] = this.pageJump+i;
             console.log("this.pageArr[i] :"+this.pageArr[i] )
           } 
-     
+          console.log("2222222222222222222222")
           this.getAnnoApi()
-      this.nextPageNum++
 
     }else if(this.lastPage == this.pageJump){
       this.disRight = "none";
+      this.disLeft = "inline-table" ; 
       this.pageArr=this.lastPageArr; 
       this.getAnnoApi()
     }
@@ -91,6 +128,9 @@ export class AnnoComponent implements OnInit {
   backPage(){
     
     if(this.lastPage  == this.pageJump){
+      if(this.lastPage == 6){
+        this.disLeft = "none";
+      }
       this.disRight = "inline-table" ; 
       this.pageJump -=5;
       this.pageArr=this.oriPageArr; 
@@ -99,10 +139,12 @@ export class AnnoComponent implements OnInit {
         this.oriPageArr[i] = this.pageJump+i;
         console.log("this.pageArr[i] :"+this.pageArr[i] )
       } 
+      
       this.getAnnoApi()
       
       
     }else if(1 == this.pageJump){
+      this.disLeft = "none";
       this.getAnnoApi()
       
      
@@ -113,12 +155,14 @@ export class AnnoComponent implements OnInit {
         this.pageArr[i] = this.pageJump+i; 
         this.oriPageArr[i] = this.pageJump+i;
         console.log("this.pageArr[i] :"+this.pageArr[i] )
+       
       } 
       this.getAnnoApi()
       
       --this.nextPageNum
       if(1 == this.pageJump){
         this.disLeft = "none";
+        
       }
     }
   }
