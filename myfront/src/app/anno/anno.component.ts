@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient} from '@angular/common/http'; 
-
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -10,7 +10,7 @@ import { HttpClient} from '@angular/common/http';
 })
 export class AnnoComponent implements OnInit {
   
-  constructor(public http:HttpClient, ) { 
+  constructor(public http:HttpClient, private router: Router) { 
     
   }
   
@@ -18,6 +18,7 @@ export class AnnoComponent implements OnInit {
   
   list:any = []; //api 받아오기
   listTitle:any = [];
+  detail:any=[];//상세보기
   totalPageNum: number = 0; //페이지 개수
   oriPageArr: any[] = [1,2,3,4,5];//원래 페이지 갯수
   pageArr: any[] = [1,2,3,4,5];
@@ -32,11 +33,34 @@ export class AnnoComponent implements OnInit {
   disLeft:any = "none" ; 
   disRight:any = "inline-table" ; 
   searchWord: any;
+  search: boolean=false; //검색단어가 공백이면 true
+  contents:any = "0";
+  clickContents: boolean = false;
 
-  
-  ngOnInit(): void {
+
+
+
+//모두 초기화하고 oninit
+  goToUrl(): void {
     
-    this.http.get<any>(`http://localhost:3000/board/anno?pageNum=${this.paramPageNum}`).subscribe(data=>{
+  this.search=false;
+    this.pageJump = 1;
+    this.samePage=false; 
+    this.totalNum= 0;
+    this.nextPageNum = 1;
+    this.paramPageNum= 1;
+    this.lastPageArr=[];
+    this.oriPageArr = [1,2,3,4,5];//원래 페이지 갯수
+    this.pageArr= [1,2,3,4,5];
+    this.disLeft = "none" ; 
+    this.disRight = "inline-table" ; 
+    this.ngOnInit()
+  }
+  
+
+  ngOnInit(): void {
+    this.http.get<any>(`http://localhost:3000/board/anno?pageNum=1`).subscribe(data=>{
+      
       this.list = data;
       this.listTitle = data.result[0];
       this.totalPageNum=data.postNum;
@@ -67,38 +91,117 @@ export class AnnoComponent implements OnInit {
     })
   }
 
-  search(){
+  //검색
+  annoSearch(){
+   
     this.searchWord = (<HTMLInputElement>document.getElementById("autocomplete-input")).value;
     console.log("searchWord: "+this.searchWord)
-    this.http.get<any>('http://localhost:3000/board/anno?pageNum='+this.paramPageNum).subscribe(data=>{
-      this.list = data;
+    this.lastPageArr=[];
+    this.http.get<any>('http://localhost:3000/board/anno/search?pageNum=1&send='+this.searchWord).subscribe(data=>{
+     
+     
+      if(data.result == "empty"){
+        
+          alert("검색단어가 없습니다.")
+         
+          this.search = false
+          this.goToUrl();
+
+      }else if(data.result == "searchEmpty"){
+        
+        this.goToUrl();
+        this.search = false
+        console.log("this.searchEmpty:"+data.result)
+      }
+      else{
+        this.list = data;
       this.listTitle = data.result[0];
       this.totalPageNum=data.postNum;
+      this.totalNum=data.result[1][0].num
       
+      this.search = true
+      this.paramPageNum=this.pageJump;
+
+      if(this.totalPageNum%5 == 0){
+        this.pageMath = this.totalPageNum/5;
+        this.lastPage = (this.pageMath)*5-4;
+        
+        for(let i=0; i<5; i++){
+          this.lastPageArr.push(this.lastPage+i);
+        }
+      }else{
+        this.pageMath = Math.floor(this.totalPageNum/5);
+        this.lastPage = (this.pageMath)*5+1;
+        
+        for(let i=1; i<=this.totalPageNum%5; i++){
+          this.lastPageArr.push(this.pageMath*5+i);
+        }
+
+      }
+      if(this.lastPage ==1){
+        this.pageArr = this.lastPageArr
+        this.disRight = "none";
+      }
+       
+      }
       
     })
+    
+   
 
   }
 
   
-
+  //페이지 클릭
   changePage(a:number){
     this.paramPageNum = a;
-    this.http.get<any>('http://localhost:3000/board/anno?pageNum='+this.paramPageNum).subscribe(data=>{
-      this.list = data;
-      this.listTitle = data.result[0];
-      this.totalPageNum=data.postNum;
+    if(this.search){
+      this.http.get<any>('http://localhost:3000/board/anno/search?pageNum='+a+'&send='+this.searchWord).subscribe(data=>{
+     
+     
+        if(data.result == "empty"){
+          alert("검색단어가 없습니다.")
+          console.log("this.empty:"+ data.result)
+          this.search = false
+          this.goToUrl();
+  
+        }else if(data.result == "searchEmpty"){
+          this.ngOnInit();
+          this.search = false
+          console.log("this.searchEmpty:"+data.result)
+        }
+        else{
+          
+          this.search = true
+          this.list = data;
+          this.listTitle = data.result[0];
+          this.totalNum=data.result[1][0].num
+          this.totalPageNum=data.postNum;
+          console.log("this.totalNum:"+this.totalNum)
+          console.log("this.totalNum:"+this.paramPageNum)
+        }
+        
+      })
       
+    }else{
       
-    })
-  }
+      this.http.get<any>('http://localhost:3000/board/anno?pageNum='+this.paramPageNum).subscribe(data=>{
+        this.list = data;
+        this.listTitle = data.result[0];
+        this.totalPageNum=data.postNum;
+       
+        
+        
+      })
+    }
+
+    }
+    
 
 
 
-
-
+//페이지 앞뒤
   nextPage(){
-
     this.pageJump = (5*(this.nextPageNum))+1
     console.log("this.lastPage :"+this.lastPage )
     console.log("this.pageJump :"+this.pageJump )
@@ -168,6 +271,9 @@ export class AnnoComponent implements OnInit {
   }
   
 
+
+
+  //페이지 뒤로갈 수 있는지
   backPageAble(){
     if(this.nextPageNum>1){
       return true;
@@ -176,6 +282,7 @@ export class AnnoComponent implements OnInit {
     }
   }
 
+  //클릭한 페이지버튼 보라색으로 만들기
   pagePoint(a:number){
    
     if(this.paramPageNum == a){
@@ -187,7 +294,7 @@ export class AnnoComponent implements OnInit {
     }
   }
 
-
+  //앞뒤쪽 페이지 이동시 api받기
   getAnnoApi():void{
     this.http.get<any>('http://localhost:3000/board/anno?pageNum='+this.pageJump).subscribe(data=>{
       this.list = data;
@@ -201,7 +308,37 @@ export class AnnoComponent implements OnInit {
   }
 
 
+//페이지 펼치기
+openContents(a:number){
 
+  this.http.get<any>('http://localhost:3000/board/anno/detail?send='+a).subscribe(data=>{
+    this.detail = data;
+    
+    console.log( "this.list.anno_contents:"+this.detail.result[0].anno_contents)
+   
+   if(a==this.detail.result[0].anno_id){
+    //  this.clickContents = false;
+     this.contents = "100px"
+
+   }else{
+    this.contents = "0"
+   }
+
+   
+   
+  })  
+  
+}
+
+checkContents(a:number):boolean{
+  if(a==this.detail.result[0].anno_id){
+    return true
+  }else{
+    return false
+  }
+  
+
+}
 
 
 

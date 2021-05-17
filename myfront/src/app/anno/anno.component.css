@@ -17,8 +17,12 @@
 #annoList{
   /* margin-bottom: 40vh; */
 }
-
-
+#annoDetail{
+  display: initial;
+}
+#annoContents{
+  cursor: pointer;
+}
 #annoTitle{
   text-align: left;
 }
@@ -93,5 +97,6 @@ padding-right: 40px;
   #cont{
     min-width: 360px;
     width: 100%;
+     
   }
 }
