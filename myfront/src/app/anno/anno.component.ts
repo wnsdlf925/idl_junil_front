@@ -1,7 +1,10 @@
+// declare const M;
+
+import { Collapsible } from "materialize-css";
+
 import { Component, OnInit } from '@angular/core';
 import { HttpClient} from '@angular/common/http'; 
 import { Router } from '@angular/router';
-
 
 @Component({
   selector: 'app-anno',
@@ -36,8 +39,12 @@ export class AnnoComponent implements OnInit {
   search: boolean=false; //검색단어가 공백이면 true
   contents:any = "0";
   clickContents: boolean = false;
+  openpage: number =1;
 
 
+
+
+  
 
 
 //모두 초기화하고 oninit
@@ -59,6 +66,11 @@ export class AnnoComponent implements OnInit {
   
 
   ngOnInit(): void {
+
+    // document.addEventListener('DOMContentLoaded', function() {
+      
+    // });
+  
     this.http.get<any>(`http://localhost:3000/board/anno?pageNum=1`).subscribe(data=>{
       
       this.list = data;
@@ -87,6 +99,9 @@ export class AnnoComponent implements OnInit {
       }
       console.log(" this.lastPage: "+ this.lastPage)
       console.log("onInit")
+
+      var elems = document.querySelectorAll('.collapsible');
+      var instances = M.Collapsible.init(elems, {});
       
     })
   }
@@ -310,37 +325,40 @@ export class AnnoComponent implements OnInit {
 
 //페이지 펼치기
 openContents(a:number){
-
-  this.http.get<any>('http://localhost:3000/board/anno/detail?send='+a).subscribe(data=>{
+  this.openpage =a
+  this.http.get<any>('http://localhost:3000/board/anno/detail?send='+this.openpage).subscribe(data=>{
     this.detail = data;
-    
-    console.log( "this.list.anno_contents:"+this.detail.result[0].anno_contents)
+    this.contents=this.detail.result[0].anno_contents
+    console.log( "thisclickContents:"+this.clickContents)
    
-   if(a==this.detail.result[0].anno_id){
-    //  this.clickContents = false;
-     this.contents = "100px"
-
-   }else{
-    this.contents = "0"
-   }
-
+    // this.checkContents()
+    this.clickContents=true
+    console.log( "thisclickContents:"+this.clickContents)
    
    
   })  
   
 }
 
-checkContents(a:number):boolean{
-  if(a==this.detail.result[0].anno_id){
-    return true
+checkContents():boolean{
+  if(this.openpage==this.detail.result[0].anno_id){
+    this.clickContents=true
+    return this.clickContents
+   
   }else{
-    return false
+    this.clickContents=false
+    return this.clickContents
   }
   
 
 }
 
 
+
+
+ 
+
+ 
 
 
 }

@@ -1,6 +1,5 @@
 
 
-
   
   <div class="row">
     <div id="annoMain" class="col s12"><h3 id="annoText">공고정보 게시판</h3></div>
@@ -24,19 +23,16 @@
         </tr>
       </thead>
       
-      <tbody *ngFor="let lists of listTitle; let i = index;">
-        <tr id = "annoContents"  (click)="openContents(list.result[0][i].anno_id)">
-          <td >{{totalNum-((paramPageNum-1)*15)-i}}</td>
+      <!-- <tbody  id="colla"> -->
+        <!-- <tr *ngFor="let lists of listTitle; let i = index;"id = "annoContents"  (click)="openContents(list.result[0][i].anno_id)">
+          <td  class="collapsible-header">{{totalNum-((paramPageNum-1)*15)-i}}</td>
           <td  id="annoTitle">{{list.result[0][i].anno_title}}</td>
           <td >{{list.result[0][i].anno_date}}</td>
-
+          <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
           
           
-          <!-- <div *ngIf="checkContents(list.result[0][i].anno_id); else elseBlock">
-            <p>true</p>
-          </div>
-          <ng-template #elseBlock>false</ng-template> -->
-        </tr>
+          
+        </tr> -->
         
         <!-- <tr >
           <td>
@@ -46,10 +42,31 @@
           </td>
         </tr> -->
         
-      </tbody>
-
+      <!-- </tbody> -->
+      
     </table>
-    
+
+    <ul id = "colla" class="collapsible">
+      <li *ngFor="let lists of listTitle; let i = index; "id = "annoContents" (click)="openContents(list.result[0][i].anno_id)"  >
+        <div  class="collapsible-header"  >
+          <div>
+            {{totalNum-((paramPageNum-1)*15)-i}}
+          </div>
+          <div>
+            {{list.result[0][i].anno_title}}
+          </div>
+          <div>
+            {{list.result[0][i].anno_date}}
+          </div>
+        </div>
+        <div >
+
+          <div *ngIf="clickContents" class="collapsible-body"><span [innerHTML] = contents></span></div>
+        </div>
+      </li>
+      
+      
+    </ul>
     
   </div>
     <!-- 리스트 -->
